@@ -141,7 +141,6 @@ export default {
     },
     
     nextButton() {
-      this.isCurrentFieldFilled();
       if(document.getElementById('wizardForm').reportValidity())
       {
         this.currentStep += 1;
@@ -166,23 +165,8 @@ export default {
       this.currentStep = 0;
       this.updateScrollPosition(0);
     },
-
-    isCurrentFieldFilled() {
-      const field = this.currentStepData();
-      console.log(JSON.stringify(field));
-      let isFilled = true;
-      if(field && field.fields.length > 0) {
-        field.fields.map(_field => {
-          if(!_field.value) {
-            isFilled = false;
-          }
-        });
-      }
-      return isFilled;
-    },
     
     currentStepData() {
-
       return this.steps[this.currentStep];
     },
     
