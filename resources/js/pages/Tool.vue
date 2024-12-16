@@ -142,6 +142,7 @@ export default {
     },
     
     nextButton() {
+      console.log(this.allWizardFields);
       if(document.getElementById('wizardForm').reportValidity())
       {
         this.currentStep += 1;
