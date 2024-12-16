@@ -39,8 +39,7 @@
       </div>
     </form>
 
-    <div v-if="!!finished" class="finished">
-      <div v-html="finishedMessage"></div>
+    <div v-if="!!finished" class="finished" v-html="finishedMessage">
     </div>
 
     </Card>
@@ -142,7 +141,7 @@ export default {
     },
     
     nextButton() {
-      console.log(this.allWizardFields);
+      console.log(this.currentStepData());
       if(document.getElementById('wizardForm').reportValidity())
       {
         this.currentStep += 1;
@@ -151,7 +150,7 @@ export default {
     },
     
     errorsForField(field) {
-      console.log(this.fieldErrors[field.attribute] || {});
+      console.log(this.fields[field.attribute] || {});
       return this.fieldErrors[field.attribute] || {};
     },
     
@@ -306,6 +305,7 @@ export default {
           windowTitle: '',
           allWizardFields:[],
           errors: new Errors(),
+          canSubmit:false,
           finished: false,
           finishedMessage: '✅',
           title: '',
