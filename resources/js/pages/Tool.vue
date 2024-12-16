@@ -169,7 +169,7 @@ export default {
     },
 
     isCurrentFieldFilled() {
-      const field = currentStepData();
+      const field = this.currentStepData();
       console.log(JSON.stringify(field));
       let isFilled = true;
       if(field && field.fields.length > 0) {
