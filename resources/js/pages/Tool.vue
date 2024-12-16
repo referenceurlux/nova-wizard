@@ -40,7 +40,7 @@
     </form>
 
     <div v-if="!!finished" class="finished">
-      <h1 v-html="finishedMessage"></h1>
+      <div v-html="finishedMessage"></div>
     </div>
 
     </Card>
