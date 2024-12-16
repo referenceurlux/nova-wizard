@@ -49,8 +49,7 @@
         {{ __('Submit') }}
       </DefaultButton>
       
-      <OutlineButton v-if="currentStep < steps.length - 1" class="button" align="center" @click="nextButton()"
-                     :disabled="!isCurrentFieldFilled()">
+      <OutlineButton v-if="currentStep < steps.length - 1" class="button" align="center" @click="nextButton()">
         {{ __('Next') }}
         <Icon class="icon" type="arrow-right" />
       </OutlineButton>
@@ -142,7 +141,7 @@ export default {
     },
     
     nextButton() {
-      console.log(JSON.stringify(this.currentStepData()));
+      this.isCurrentFieldFilled();
       if(document.getElementById('wizardForm').reportValidity())
       {
         this.currentStep += 1;
