@@ -142,7 +142,7 @@ export default {
     },
     
     nextButton() {
-      console.log(this.currentStepData());
+      console.log(JSON.stringify(this.currentStepData()));
       if(document.getElementById('wizardForm').reportValidity())
       {
         this.currentStep += 1;
