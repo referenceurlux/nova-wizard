@@ -49,7 +49,8 @@
         {{ __('Submit') }}
       </DefaultButton>
       
-      <OutlineButton v-if="currentStep < steps.length - 1" class="button" align="center" @click="nextButton()">
+      <OutlineButton v-if="currentStep < steps.length - 1" class="button" align="center" @click="nextButton()"
+                     :disabled="!isCurrentFieldFilled()">
         {{ __('Next') }}
         <Icon class="icon" type="arrow-right" />
       </OutlineButton>
@@ -165,6 +166,19 @@ export default {
       this.reload();
       this.currentStep = 0;
       this.updateScrollPosition(0);
+    },
+
+    isCurrentFieldFilled() {
+      const field = currentStepData();
+      let isFilled = true;
+      if(field && field.fields.length > 0) {
+        field.fields.map(_field => {
+          if(!_field.value) {
+            isFilled = false;
+          }
+        });
+      }
+      return isFilled;
     },
     
     currentStepData() {
