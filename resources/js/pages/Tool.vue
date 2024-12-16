@@ -170,6 +170,7 @@ export default {
 
     isCurrentFieldFilled() {
       const field = currentStepData();
+      console.log(JSON.stringify(field));
       let isFilled = true;
       if(field && field.fields.length > 0) {
         field.fields.map(_field => {
@@ -182,6 +183,7 @@ export default {
     },
     
     currentStepData() {
+
       return this.steps[this.currentStep];
     },
     
