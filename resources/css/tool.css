@@ -23,8 +23,24 @@ ul.step-tabs li {
 }
 
 .nova-wizard .button:hover {
-background-color: rgba(13, 18, 37, 0.5);
+  background-color: rgba(13, 18, 37, 0.5);
   border-color: rgba(13, 18, 37, 0.5);
+}
+
+.nova-wizard .button-secondary {
+  float:right;
+  width: 14rem;
+  height: 4rem;
+  margin: 1rem;
+  margin-right: 0;
+  font-size: 13pt;
+  color: rgb(71,85,105);
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.nova-wizard .button-secondary:hover {
+  background-color: rgba(71,85,105, 0.5);
 }
 
 .nova-wizard .icon {

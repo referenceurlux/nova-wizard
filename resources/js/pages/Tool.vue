@@ -54,7 +54,7 @@
         <Icon class="icon" type="arrow-right" />
       </OutlineButton>
       
-      <ToolbarButton v-if="currentStep > 0" class="button" align="center" @click="previousButton()">
+      <ToolbarButton v-if="currentStep > 0" class="button-secondary" align="center" @click="previousButton()">
         <Icon class="icon" type="arrow-left" />
         {{ __('Previous') }}
       </ToolbarButton>
