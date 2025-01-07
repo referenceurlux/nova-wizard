@@ -4,7 +4,7 @@
 
     <Card
       class="flex flex-col items-left"
-      style="min-height: 660px;padding:0;"
+      style="padding:0;"
     >
 
     <div id="progress-container" class="bg-gray-200 dark:bg-gray-700">
