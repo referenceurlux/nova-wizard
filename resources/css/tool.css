@@ -40,7 +40,7 @@ ul.step-tabs li {
 }
 
 .nova-wizard .button-secondary:hover {
-  background-color: rgba(71,85,105, 0.5);
+  background-color: rgba(71,85,105, 0.05);
 }
 
 .nova-wizard .icon {
