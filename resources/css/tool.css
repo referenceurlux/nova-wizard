@@ -15,8 +15,8 @@ ul.step-tabs li {
 }
 
 .nova-wizard .button {
-  width: 8rem;
-  height: 2.25rem;
+  width: 12rem;
+  height: 4rem;
   margin: 1rem;
   margin-right: 0;
   font-size: .875rem;
@@ -31,8 +31,8 @@ ul.step-tabs li {
 }
 
 .nova-wizard .button-secondary {
-  width: 8rem;
-  height: 2.25rem;
+  width: 12rem;
+  height: 4rem;
   margin: 1rem;
   margin-right: 0;
   font-size: .875rem;
