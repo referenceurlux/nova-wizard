@@ -5,18 +5,16 @@ ul.step-tabs li {
 
 .nova-wizard .step-buttons {
   border: 0px #fff dashed;
-  text-align:right;
+  text-align:center;
   padding: 1rem;
   padding-right: 0;
 }
 
 .nova-wizard .button {
-  float:right;
-  width: 14rem;
-  height: 4rem;
+  height: 2.25rem;
   margin: 1rem;
   margin-right: 0;
-  font-size: 13pt;
+  font-size: .875rem;
   color: rgb(255 255 255);
   background-color: rgb(13, 18, 37);
   border: 1px solid rgb(13, 18, 37);
@@ -28,12 +26,10 @@ ul.step-tabs li {
 }
 
 .nova-wizard .button-secondary {
-  float:right;
-  width: 14rem;
-  height: 4rem;
+  height: 2.25rem;
   margin: 1rem;
   margin-right: 0;
-  font-size: 13pt;
+  font-size: .875rem;
   color: rgb(71,85,105);
   background-color: transparent;
   border: 1px solid transparent;
