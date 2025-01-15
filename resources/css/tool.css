@@ -6,7 +6,7 @@ ul.step-tabs li {
 .nova-wizard .step-buttons {
   border: 0 #fff dashed;
   text-align:center;
-  padding: 1rem 0 1rem 1rem;
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +62,7 @@ ul.step-tabs li {
   flex: 0 0 auto; /* This prevents the items from shrinking */
   width: 100%; /* Set to desired width */
   white-space: normal; /* Allow the content to wrap inside the step */
-  padding: 3rem;
+  padding: 2rem;
 }
 
 /*.nova-wizard .step-wrapper h1 {
