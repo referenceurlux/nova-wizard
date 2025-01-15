@@ -91,7 +91,7 @@ ul.step-tabs li {
 }
 
 .nova-wizard.finished div.finished {
-  padding: 4rem 3rem 3rem;
+  padding: 2rem;
   text-align: center;
   font-size: 22pt;
 }
@@ -106,6 +106,5 @@ ul.step-tabs li {
 }
 
 .step-field {
-  padding-top: 1rem;
   padding-bottom: 0;
 }
