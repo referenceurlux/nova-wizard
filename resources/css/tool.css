@@ -104,3 +104,8 @@ ul.step-tabs li {
 .nova-wizard .reset-button .button {
   float: none;
 }
+
+.step-field {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
