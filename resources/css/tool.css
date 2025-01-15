@@ -62,7 +62,7 @@ ul.step-tabs li {
   flex: 0 0 auto; /* This prevents the items from shrinking */
   width: 100%; /* Set to desired width */
   white-space: normal; /* Allow the content to wrap inside the step */
-  padding: 4rem 3rem 3rem;
+  padding: 3rem;
 }
 
 /*.nova-wizard .step-wrapper h1 {
