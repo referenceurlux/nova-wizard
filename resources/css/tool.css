@@ -42,6 +42,11 @@ ul.step-tabs li {
   background-color: rgba(71,85,105, 0.05);
 }
 
+.nova-wizard .icon {
+  margin-left:8px;
+  margin-right: 8px;
+}
+
 .nova-wizard label {
   width: 240px;
   font-size: 13pt;
