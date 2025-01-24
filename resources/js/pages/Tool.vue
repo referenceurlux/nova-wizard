@@ -17,7 +17,7 @@
           <template v-for="(step, index) in steps">
       
             <div class="step-wrapper">
-              <h1 class="font-normal text-xl md:text-xl mb-4 text-left">{{ step.title }}</h1>
+              <h1 class="font-normal text-xl md:text-xl text-left">{{ step.title }}</h1>
       
               <component
                 class="step-field"
