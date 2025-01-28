@@ -164,6 +164,7 @@ export default {
       this.reload();
       this.currentStep = 0;
       this.updateScrollPosition(0);
+      window.scrollTo({top: 0, behavior: 'smooth'});
     },
     
     currentStepData() {
