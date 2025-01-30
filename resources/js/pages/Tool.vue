@@ -165,7 +165,7 @@ export default {
       //this.currentStep = 0;
       //this.updateScrollPosition(0);
       //window.scrollTo({top: 0, behavior: 'smooth'});
-      window.location.href = 'https://simsy.app/dashboard/resources/integration-persos';
+      Nova.visit(`/resources/integration-persos`)
     },
     
     currentStepData() {
